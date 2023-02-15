@@ -7,6 +7,8 @@ int main(){
     scanf("%d",&valor);
 
     result = ((valor%2)==0) ? valor*2: valor;
+    // 'result' é a variavel que vai receber a condição do if, em seguida tem-se a condição
+    //depois do ? é o if e depois do : é o else
     // ou result *= valor%2==0?2:1;
 
     printf("%d\n",result);
