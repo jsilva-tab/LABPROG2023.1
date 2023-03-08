@@ -1,5 +1,6 @@
 // Questão PRODUTÓRIO, onde xi = i+i/1
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(){
     //Entrada
@@ -8,6 +9,12 @@ int main(){
     scanf("%d",&m);
     puts("Digite o limite superior:");
     scanf("%d",&n);
+    
+    // Validação dados de entrada
+    if(m>n){
+        puts("Dados de entrada inválidos.");
+        exit(1);
+    }
 
     //Processamento
     float resultado=1;
